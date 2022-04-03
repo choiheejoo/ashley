@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* CSS temp*/
+/* 헤더 */
+/*  GNB */
+header>#nonsha{
+	position:absolute;
+	width:20%; height:70px;  left:50%; transform:translateX(-50%); 
+	background-color:#fff; z-index:7; 
+}
+header>#menubox{
+	position:relative;
+	width:100%; height:70px;
+	background-color:#fff;	 box-shadow:0 3px 5px rgba(0,0,0,0.3); z-index:3;
+}
+header>#circle{ 
+	position:absolute; left:50%; transform:translateX(-50%); top:-55px;
+	width:188px; height:188px; border-radius:188px; background-color:#fff;
+	box-shadow:0 3px 5px rgba(0,0,0,0.3); display:block;  z-index:5;
+}
+#gnb{	position:absolute; width:100%; top:35%; left:2%; }
+#gnb>ul{ width:100%; }
+#gnb>ul>li{ padding:0 1.5rem; font:1.2rem "times";/* outline:1px solid red;*/}
+#gnb>ul>li a{  color:#486600;}
+
+/* 로그인 회원가입 */
+#menubox>#smenu{	position:absolute; top:35%; right:2%; /* z-index:3;*/ }
+#smenu>ul{ width:100%; }
+#smenu>ul>li{ padding:0 1.5rem; font:1.2rem "times"; }
+#smenu>ul>li a{   color:#486600; }
+
+#logo{ 
+	position:absolute; left:50%; transform:translateX(-50%); top:-55px;
+	width:188px; height:188px; z-index:9; 
+}	
+#logo>a>img{
+	position:absolute; left:50%; transform:translate(-50%,-50%); top:65%;	width:80%; /* z-index:33;*/} 
+	
+/* 푸터 */
+#info{ position:relative; background-color:#222; width:100%; height:220px; color:#c3c3c3; font:0.9rem 'NanumSquare';  }
+#infomenu{ position:absolute; top:30%; left:5%; } /*하단 메뉴 전체*/
+#infomenu>li{ color:#828282; } /*하단 메뉴*/
+#infomenu>li>a{ color:#c3c3c3; font-weight:bold;  float:left; } /*하단 메뉴 a링크*/
+#infomenu>li:nth-child(1)>a{ color:#486600; }
+#info>address{ position:absolute; top:55%; left:5%; font-style:normal; line-height:21px; } /*회사정보*/
+
+/* SNS */
+#sns{ position:absolute; top:65%; right:16%; width:150px; height:50px; margin-right:1%;}
+#sns>li{ width:40px; height:40px; background:url(../images/sns.png) no-repeat top/120px 80px; cursor:pointer; float:left; margin:0 4px;}
+#sns>li:nth-child(1){ background-position:0 0; }
+#sns>li:nth-child(2){ background-position:-40px 0; }
+#sns>li:nth-child(3){ background-position:-80px 0; }
+#sns>li:nth-child(1):hover{ background-position:0 -40px; }
+#sns>li:nth-child(2):hover{ background-position:-40px -40px; }
+#sns>li:nth-child(3):hover{ background-position:-80px -40px; }
+
+/* 패밀리사이트 */
+#fsite{
+	position:absolute; top:65%; right:5%;
+	width:160px; height:40px; padding-bottom:2px; padding-left:8px;
+	font-size:0.72rem; color:#ddd; 
+	background-color:#444; cursor:pointer;
+}
+#fsite:hover{ background-color:#555}
+
+
+/*1250이상 1500px 미만*/
+@media screen and (min-width:1250px) and (max-width:1600px){
+	#gnb>ul>li{ padding:0 1rem; font-size:1.2rem;}
+	#smenu>ul>li{ padding:0 1rem; font-size:1.2rem;}
+	#sns{  margin-right:3%; }
+}
+/*1250px 미만*/
+@media screen and (max-width:1250px){
+	#gnb>ul>li{ padding:0 0.75rem; font-size:1rem; }
+	#smenu>ul>li{ padding:0 0.8rem; font-size:1rem; }
+	header>#circle{ width:170px; height:170px; border-radius:170px; 	}
+	header>#nonsha{ width:18%;}
+	#logo>a>img{ width:65%; top:60%;} 
+	#sns{  margin-right:5%; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

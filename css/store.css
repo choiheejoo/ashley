@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS menu */
+
+@import url(temp.css);
+@import url(common.css);
+
+header{	position:relative; width:100%; }
+#bannerBox{ width:100%; height:350px; background:url(../images/storeBanner.jpg) no-repeat 0/cover; }
+#bannerBox>h2{ font:3rem/350px times; color:#fff; text-align:center;}

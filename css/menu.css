@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS menu */
+
+@import url(temp.css);
+@import url(common.css);
+
+header{	position:relative; width:100%; }
+#bannerBox{ position:relative; width:100%; height:500px; z-index:1; }
+#slide{ position:relative; width:100%; height:100%;  overflow:hidden;  }
+#slide>ul{ position:absolute; top:0; left:0; width:400%; height:100%; }
+#slide>ul>li{ width:25%; height:100%; }
+#slide>ul>li a{ display:block; width:100%; height:100%; }  
+#slide>ul>.c_banner{ background:url(../images/c_banner.jpg) no-repeat center/cover; }
+
+#bannerBox>.btns{ 
+	position:absolute; top:50%; transform:translateY(-50%);
+	width:27px; height:55px; z-index:99999; cursor:pointer;
+}
+#bannerBox>.btnL{ left:10%; background:url(../images/btnL.png) no-repeat;  }
+#bannerBox>.btnR{ right:10%; background:url(../images/btnR.png) no-repeat; }
+
+#cont_wrap{ position:relative; width:100%; height:2100px; }
+#contbg{ position:absolute; width:45%; height:100%; background-color:#edf6d9; left:50%; transform:translateX(-50%); }
+.btnBox{ position:relative; margin-top:4%; width:25%; height:100%; overflow:hidden; /*outline:2px solid yellow; */float:left;}
+.mb1{ margin-left:15%; }
+.mb2{ margin-left:20%; }
+.btnBox>li{ position:relative; width:90%; margin-left:5%; height:21%; margin-bottom:10%; /*border:3px solid blue;*/ border-radius:100%;/* outline:1px solid red;*/}
+.menubtn{ width:100%; height:100%;  }
+.menubtn a{ display:block; width:100%; height:100%; border-radius:100%; }
+.mbtn1{ background:url(../images/cm_menu.png) no-repeat center/100%; }
+.mbtn2{ background:url(../images/cm_menu2.png) no-repeat center/100%; }
+.mbtn3{ background:url(../images/cm_menu3.png) no-repeat center/100%; }
+.mbtn4{ background:url(../images/cm_menu4.png) no-repeat center/100%; }
+.mbtn5{ background:url(../images/cm_menu5.png) no-repeat center/100%; }
+.mbtn6{ background:url(../images/cm_menu6.png) no-repeat center/100%; }
+.mbtn7{ background:url(../images/cm_menu7.png) no-repeat center/100%; }
+.mbtn8{ background:url(../images/cm_menu8.png) no-repeat center/100%; }
+.m_fork{ position:absolute; top:70%; left:-10%; width:43%; height:60%; background:url(../images/m_fork.png) no-repeat 0/80%; opacity:0; }
+.m_knife{ position:absolute; top:70%; right:-19%; width:43%; height:60%; background:url(../images/m_knife.png) no-repeat 0/80%; opacity:0; }
+
+@media screen and (max-width:1680px){
+	#bannerBox{ height:420px; }
+}
+@media screen and (max-width:1490px){
+	#bannerBox{ height:350px; }
+	#cont_wrap{ height:2000px; }
+	.btnBox{ width:30%; margin-top:8%; }
+	.mb1{ margin-left:10%; }
+	.mb2{ margin-left:20%; }
+	.btnBox>li{  height:19%;  margin-bottom:20%;}
+}
+
+
+
+
+
+
+
+

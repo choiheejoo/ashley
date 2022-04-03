@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* CSS menu */
+
+@import url(temp.css);
+@import url(common.css);
+
+header{	position:relative; width:100%; }
+#bannerBox{ position:relative; width:100%; height:500px; z-index:1; }
+#slide{ position:relative; width:100%; height:100%; overflow:hidden; }
+#slide>ul{ position:absolute; top:0; left:0; width:400%; height:100%; }
+#slide>ul>li{ width:25%; height:100%; }
+#slide>ul>li a{ display:block; width:100%; height:100%; }  
+#slide>ul>.c_banner{ background:url(../images/c_banner.jpg) no-repeat center/cover; }
+
+#bannerBox>.btns{ 
+	position:absolute; top:50%; transform:translateY(-50%);
+	width:27px; height:55px; z-index:99999; cursor:pointer;
+}
+#bannerBox>.btnL{ left:10%; background:url(../images/btnL.png) no-repeat;  }
+#bannerBox>.btnR{ right:10%; background:url(../images/btnR.png) no-repeat; }
+
+#cont_wrap{ position:relative; width:100%; height:auto; margin-bottom:200px; }
+
+/*/////////////// 셀렉트 박스 - 메뉴이동 ////////////// */
+#lnbbox{  position:relative; margin:2% auto; width:220px; height:50px; }
+/*#lnbbox>h3{ width:70px; height:30px; float:left; font:1rem/30px NanumSquare; }*/
+#menu_lnb{ width:100%; height:100%; padding-left:10px;  font:1.3rem/30px NanumSquare; border:1px solid #aaa; color:#333; }
+
+#detailbox{ width:100%; height:3200px; }
+#detailbox>#hot_wrap{ width:100%; height:100%; }
+#hot_wrap>li{ position:relative; width:100%; height:25%; }
+
+/* ///////////음식사진//////////// */
+.left>.hotImg{ transform:translateX(-800px); transition:all 0.8s ease;}
+.right>.hotImg{ transform:translateX(800px); transition:all 0.8s ease;}
+.hotImg.scrollAni{transform:translateX(0);}
+#hot_wrap>li>.hotImg{ position:absolute; width:40%; height:100%;  float:left;}
+#hot_wrap>li>.hotImg>img{ position:absolute; top:0; width:90%;} /* 음식 이미지 */
+#hot_wrap>.left>.hotImg{ left:0; } /* 음식사진 왼쪽 */
+#hot_wrap>.right>.hotImg{ right:0; } /* 음식사진 오른쪽 */
+#hot_wrap>.right>.hotImg>img{ right:0;} /* 이미지 오른쪽에 붙게 */
+#hot_wrap>li>.udon>img{ width:100%; }
+
+/* ///////////음식설명//////////// */
+#hot_wrap>li>.infobox{ position:absolute; width:58%; height:30%; } 
+.infobox>h1{ margin-bottom:0.5rem; font:3rem NanumMyeongjo; }
+.infobox>h2{ margin-bottom:2rem; font:1.5rem times; }
+.infobox>p{ margin-bottom:2rem; font:1.8rem/2.7rem NanumMyeongjo; }
+.infobox>h3{margin-bottom:0.7rem;  font: bold 1.2rem NanumMyeongjo; color:#486600; }
+#hot_wrap>.left>.infobox{ right:0; top:50%; transform:translateY(-50%); } /* 오른쪽-음식 사진 왼족-설명*/
+#hot_wrap>.right>.infobox{ left:0;  top:50%; transform:translateY(-50%); text-align:right; } /* 왼쪽-음식 사진 오른쪽-설명*/
+
+@media screen and (max-width:1680px){
+	#bannerBox{ height:420px; }
+	#detailbox{ height:2800px; }
+}
+@media screen and (max-width:1490px){
+	#bannerBox{ height:350px; }
+	#detailbox{ height:2400px; }
+	#hot_wrap>li>.infobox>p{ font-size:1.6rem; }
+	#hot_wrap>.left>.infobox{ right:0;} /* 오른쪽-음식 사진 왼족-설명*/
+	#hot_wrap>.right>.infobox{ left:0; } /* 왼쪽-음식 사진 오른쪽-설명*/
+}
+@media screen and (max-width:1360px){
+	#detailbox{ height:2000px; }
+	.infobox>h1{  font-size:2.5rem; }
+	.infobox>h2{ font-size:1.2rem}
+	#hot_wrap>li>.infobox>p{ font-size:1.3rem; line-height:2rem;}
+}

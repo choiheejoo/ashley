@@ -1,0 +1,157 @@
+@charset "utf-8";
+/* CSS type */
+
+@import url(temp.css);
+@import url(common.css);
+
+header{	position:relative; width:100%; }
+#bannerBox{ position:relative; width:100%; height:500px; z-index:1; }
+#slide{ position:relative; width:100%; height:100%; overflow:hidden; }
+#slide>ul{ position:absolute; top:0; left:0; width:400%; height:100%; }
+#slide>ul>li{ width:25%; height:100%; }
+#slide>ul>li a{ display:block; width:100%; height:100%; }  
+#slide>ul>.c_banner{ background:url(../images/c_banner.jpg) no-repeat center/cover; }
+
+#bannerBox>.btns{ 
+	position:absolute; top:50%; transform:translateY(-50%);
+	width:27px; height:55px; z-index:99999; cursor:pointer;
+}
+#bannerBox>.btnL{ left:10%; background:url(../images/btnL.png) no-repeat;  }
+#bannerBox>.btnR{ right:10%; background:url(../images/btnR.png) no-repeat; }
+
+#cont_wrap{ position:relative; width:100%; height:auto; }
+#bgdish1{ 
+	position:absolute; width:700px; height:776px; bottom:3%; right:10%;
+	background:url(../images/type_bgdish1.png) no-repeat center/85%; 
+}
+#bgdish2{ 
+	position:absolute; width:597px; height:620px; top:78%; left:12%;
+	background:url(../images/type_bgdish2.png) no-repeat center/85%; z-index:9999;
+	20
+}
+/*///////////////////////// 가격 ////////////////////////*/
+#cont_price01{position:relative; margin-top:5%; width:100%; height:1704px; overflow:hidden; }
+#bgimg{ position:relative; width:100%; height:400px; background:url(../images/fixed.jpg) fixed no-repeat 0/cover; }
+#cont_price02{position:relative; width:100%; height:1650px; }
+#price01{ 
+	position:absolute; left:0%; width:1257px; height:1704px; 
+	background:url(../images/pricebg1.png) no-repeat top/90%;
+}
+#price02{ 
+	position:absolute; right:5%;  padding-top:13%; width:1194px; height:1650px; 
+	background:url(../images/pricebg2.png) no-repeat center/90%; 
+}
+
+#cp_title{ font:3rem 'times';  color:#486600; text-align:center; margin-top:33%; } /*price*/
+.priceWrap{ margin:7% 0 10% 16%;}
+.priceWrap2{ margin:7% 0 0 11%; }
+.wrap2{ height:300px; }
+.stitle{  /*saladbar*/
+	height:25px; padding-left:10px; 
+	font:2rem/1.5rem 'times'; color:#2c3e01; border-left:7px solid #2c3e01; 
+}
+.pricebox{ position:relative; width:83%; height:100px; margin-bottom:20px; color:#486600; font:1.2rem 'NanumSquare';}
+.pricebox2{ position:relative; width:83%; height:150px; margin-bottom:20px; color:#486600; font:1.2rem 'NanumSquare';}
+
+.pricebox>li:last-child{ position:absolute; right:0; width:100px;text-align:left; }
+.pricebox>li>p:nth-child(1){ font:1.5rem 'times'; }
+.priceWrap2>.pricebox>li>p:nth-child(2){ margin:2.5rem 0 1.5rem 2rem; font:500 1.6rem 'NanumMyeongjo'; }
+.priceWrap2>.pricebox>li>p:nth-child(3){ margin-left:2rem; font:500 1.6rem 'NanumMyeongjo'; }
+.pricebox>li>p{ margin:0.5rem 0;}
+.pricebox span{ margin-right:10px; font:500 2rem/3rem 'NanumMyeongjo'; } /* 평일런치 */
+.pricebox>.price{ font:500 1.6rem/3.5rem 'NanumMyeongjo';} /*9,900*/
+.pricebox>li>.Rtxt{ color:#ea132d; font-size:1.1rem; } /*빨간글씨*/
+
+.p_pos{ margin-top:6rem; margin-right:2rem;} /* 세트메뉴,드링크 가격 위치조정 */
+.p_pos2{ margin-top:5rem; margin-right:2rem }
+
+
+/*//////////////////// 음식사진 ///////////////////*/
+#foodWrap{ position:relative; width:100%; height:686px; margin-top:400px; }
+#foodWrap>.food{ width:100%; height:47%;}
+.food1{ margin-bottom:1%; }
+.food>li{ width:24.25%; height:100%; margin-right:1%; opacity:0.5; }
+.food>li:last-child{ margin:0; }
+.food1>li:nth-child(1){ background:url(../images/tc_food1.gif) no-repeat center/100%;  }
+.food1>li:nth-child(2){ background:url(../images/tc_food2.gif) no-repeat center/100%;  }
+.food1>li:nth-child(3){ background:url(../images/tc_food3.gif) no-repeat center/100%;  }
+.food1>li:nth-child(4){ background:url(../images/tc_food4.gif) no-repeat center/100%;  }
+.food2>li:nth-child(1){ background:url(../images/tc_food5.gif) no-repeat center/100%;  }
+.food2>li:nth-child(2){ background:url(../images/tc_food6.gif) no-repeat center/100%;  }
+.food2>li:nth-child(3){ background:url(../images/tc_food7.gif) no-repeat center/100%;  }
+.food2>li:nth-child(4){ background:url(../images/tc_food8.gif) no-repeat center/100%;  }
+/*//////////////////// 매장찾기 ///////////////////*/
+#store{
+	width:100%; height:500px; margin-top:100px; 
+	background:url(../images/storebg_c.jpg) no-repeat  0 -120px/cover;	
+}
+#store>#stitle{ 
+	position:relative; text-align:center; padding-top:95px;
+	color:#fff; font:2.5rem 'NanumMyeongjo'; letter-spacing:0.2rem;
+}
+#store>#st_box{
+	position:relative; margin:70px auto;
+	width:35%; height:200px;/* outline:1px solid red;*/
+}
+#st_box>#st_obg{ /* 반투명 */
+	position:absolute; top:0; left:0;
+	width:100%; height:55px; background-color:#000; opacity:0.6;
+}
+#st_search{ /* 검색창 */
+	position:absolute; top:0; left:0;
+	width:100%; height:55px;
+	border:2px solid #fff; background-color:transparent;
+	padding-left:13px; color:#fff;
+}
+#st_btn{ /* 돋보기 버튼 */
+	position:absolute; right:5px; top:0; width:55px; height:55px;
+	background:url(../images/store_search.png) no-repeat center/29px 30px;
+	border:0;
+}
+#st_detail{ /* 하단 상세보기 버튼 */
+	position:absolute; bottom:15%; left:50%; transform:translateX(-50%);
+	width:22%; height:45px; background-color:transparent;
+	color:#fff; font:1rem "NanumSquare"; letter-spacing:0.1rem;
+	border:1px solid #fff; cursor:pointer;
+}
+#st_detail:hover{ background-color:rgba(0,0,0,0.6); }
+
+@media screen and (max-width:1680px){
+	#bannerBox{ height:420px; }
+	#bgdish1{ width:550px; height:500px;bottom:3%; right:10%; }
+	#bgdish2{  width:500px; height:620px; top:68%; left:8%; }
+	#cont_price01{ height:1450px; }
+	#bgimg{ height:300px; }
+	#cont_price02{ height:1450px;}
+	#price01{ width:1000px; height:1300px; left:5%; }
+	#price02{ padding-top:8%; width:1000px; height:1300px; right:6%; }
+	#cp_title{ margin-top:23%; } /*price*/
+	.pricebox span{  font-size:1.7rem; } /* 평일런치 */
+	.pricebox>li>p:nth-child(1){ font-size:1.2rem; }
+	#foodWrap{ height:480px; margin-top:200px; }
+	#store{ height:400px; }
+	#store>#stitle{ 	padding-top:75px; }
+}
+
+@media screen and (max-width:1490px){
+	#bannerBox{ height:350px; }
+	#bgdish1{  right:-2%; bottom:7%; }
+	#bgdish2{   left:1%; }
+	#price01{ left:0; }
+	#price02{ padding-top:10%; right:0; }
+	#store{ height:350px; }
+	#store>#stitle{ 	padding-top:55px; font-size:2rem;}
+	#store>#st_box{ margin:50px auto; }
+}
+@media screen and (max-width:1360px){
+	#bgdish1{ width:450px; right:0%; }
+	#bgdish2{  width:400px; left:1%; }
+	#price01{ left:0; }
+	#price02{ padding-top:10%; right:0; }
+	#foodWrap{ height:400px; margin-top:100px; }
+	#store{ height:295px; margin-top:70px; }
+	#store>#stitle{ 	padding-top:55px; font-size:1.8rem;}
+	#store>#st_box{ margin:40px auto; }
+	#st_detail{  bottom:27%; }
+
+}

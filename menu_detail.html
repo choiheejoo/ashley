@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ASHLEY-menu_detail</title>
+<link rel="stylesheet" type="text/css" href="css/menu_detail.css">
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/menu_detail.js"></script>
+
+</head>
+
+<body>
+<header>
+    <div id="logo"><a href="index.html"><img src="images/logo.png" alt="로고"></a></div><!--로고-->
+	<section id="nonsha"></section>
+    <div id="circle"></div>
+	<section id="menubox">
+        <nav id="gnb"><!--gnb-->
+            <ul>
+              <li><a href="type.html">TYPE</a></li>
+              <li><a href="menu.html">MENU</a></li>
+              <li><a href="#">EVENT</a></li>
+              <li><a href="store.html">STORE</a></li>
+              <li><a href="#">CUSTOMER</a></li>
+            </ul>
+        </nav>
+        <aside id="smenu"><!--로그인-->
+            <ul>
+              <li><a href="#">LOGIN</a></li>
+              <li><a href="#">JOIN</a></li>
+            </ul>
+        </aside>        
+    </section>
+</header>
+    <!-- ///////////////////배너////////////////// -->
+    <section id="bannerBox">
+    	<article id="slide">
+            <ul>
+                <li class="c_banner"></li>
+                <li class="w_banner"></li>
+                <li class="a_banner"></li>
+                <li class="q_banner"></li>
+            </ul>
+    	</article>
+        <div class="btns btnL"><a href="#"></a></div>
+        <div class="btns btnR"><a href="#"></a></div>            
+    </section>
+    
+<section id="cont_wrap">
+	<div id="lnbbox">
+    	<!--<h3>Category</h3>-->
+        <select id="menu_lnb" onChange="if(this.value) window.open(this.value,'_self');">
+            <option value="menu_detail.html" >Season menu</option>
+            <option value="menu_detail.html" selected>Hot</option>
+            <option value="menu_detail.html">Cold</option>
+            <option value="menu_detail.html">Noodle＆Bibimbap</option>
+            <option value="menu_detail.html">Dessert</option>
+            <option value="menu_detail.html">Main menu</option>
+            <option value="menu_detail.html">Take out</option>
+            <option value="menu_detail.html">Drink＆Wine</option>
+        </select>
+	</div>
+    <article id="detailbox">
+        <ul id="hot_wrap">
+            <li class="left">
+                <div class="hotImg"><img src="images/hot01.png" alt="게살볶음밥"></div>
+                <div class="infobox">
+                    <h1>게살볶음밥</h1>   
+                    <h2>Crab Fried Rice</h2>
+                    <p>쫀득하게 씹히는 게살과 몽글몽글한 스크램블 에그를 <br>
+                        곁들인 오리엔탈 게살 볶음밥 아이들에게 인기 만점이에요!</p>
+                    <h3>W, CLASSIC 올데이 메뉴</h3>
+                </div>
+            </li>
+            <li class="right">
+                <div class="hotImg"><img src="images/hot02.png" alt="까르보나라 떡볶이"></div>
+                <div class="infobox">
+                    <h1>까르보나라 떡볶이</h1>   
+                    <h2>Carbonara Teokbokki</h2>
+                    <p>부드러은 까르보나라 크림소스와 달콤 짭조름 데리야끼 소스를<br>
+                        믹스해 구멍이 송송 뚫린쌀떡과 베이컨, 브로콜리, 양파를 곁들인<br>
+                        애슐리 인기메뉴 까르보나라 떡볶이</p>
+                    <h3>W, CLASSIC 올데이 메뉴</h3>
+                </div>
+            </li>
+            <li class="left">
+                <div class="hotImg udon"><img src="images/hot03.png" alt="매콤 야끼우동"></div>
+                <div class="infobox">
+                    <h1>매콤 야끼우동</h1>   
+                    <h2>Spicy Udon</h2>
+                    <p>양배추, 양파 등 야채와 함게 매콤한 소스로 <br>
+                        함께 볶아낸 요리</p>
+                    <h3>W 올데이 메뉴</h3>
+                    <h3>CLASSIC 평일런치 메뉴</h3>
+                </div>
+            </li>
+            <li class="right">
+                <div class="hotImg"><img src="images/hot04.png" alt="치즈 온더 불떡볶이"></div>
+                <div class="infobox">
+                    <h1>치즈 온더 불떡볶이</h1>   
+                    <h2>Cheese on the Teokbokki</h2>
+                    <p>매운 양념의 국물 떡볶이 위에 쭉쭉 늘어나는 피자치즈가 듬뿍</p>
+                    <h3>CLASSIC 평일 런치 메뉴</h3>
+                </div>
+            </li>
+        </ul>
+    </article>
+</section>
+<footer id="info">
+	  <ul id="infomenu"><!--하단메뉴-->
+	    <li><a href="#">개인정보처리방침</a>　|　</li>
+	    <li><a href="#">영상정보처리기기운영·관리방침</a>　|　</li>
+	    <li><a href="#">서비스 이용약관 </a>　|　</li>
+        <li><a href="#">사이트맵 </a></li>
+	  </ul><!--하단메뉴 끝-->
+	  <address>
+      	(주) 이랜드파크 | 서울 강남구 압구정로 152 극동스포츠센터 지하 1층<br>
+        대표이사 : 김현수 | 개인정보보호 책임자 : 김현수 | 대표전화 : 1577-1259<br>
+		COPYRIGHT ⓒ CHOIHEEJOO. ALL RIGHTS RESERVED.
+      </address>
+      <select id="fsite" onChange="if(this.value) window.open(this.value);">
+      	<option>패밀리 사이트 바로가기</option>
+      	<option value="http://www.elandeat.com/brandDetail/RI/">리미니</option>
+      	<option value="http://www.elandeat.com/brandDetail/PM">피자몰</option>
+      	<option value="http://www.thecaffe.co.kr/">더카페</option>
+      	<option value="http://www.elandeat.com/brandDetail/OR">아시아문</option>
+      </select>
+      <ul id="sns">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

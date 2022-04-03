@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ASHLEY</title>
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/index.js"></script>
+</head>
+
+<body>
+<header>
+    <div id="logo"><a href="index.html"><img src="images/logo.png" alt="로고"></a></div><!--로고-->
+	<section id="nonsha"></section>
+    <div id="circle"></div>
+	<section id="menubox">
+        <nav id="gnb"><!--gnb-->
+            <ul>
+              <li><a href="type.html">TYPE</a></li>
+              <li><a href="menu.html">MENU</a></li>
+              <li><a href="#">EVENT</a></li>
+              <li><a href="store.html">STORE</a></li>
+              <li><a href="#">CUSTOMER</a></li>
+            </ul>
+        </nav>
+        <aside id="smenu"><!--로그인-->
+            <ul>
+              <li><a href="#">LOGIN</a></li>
+              <li><a href="#">JOIN</a></li>
+            </ul>
+        </aside>        
+    </section>
+    <section id="mainImg"></section><!--메인이미지-->
+</header>
+<section id="wrap">
+    <ul id="type"> <!-- 타입 : 가격 -->
+        <li><a href="type.html"><img src="images/type1.png" alt="퀸즈"></a></li>
+        <li><a href="type.html"><img src="images/type2.png" alt="더블유"></a></li>
+        <li><a href="type.html"><img src="images/type3.png" alt="에이랩"></a></li>
+        <li><a href="type.html"><img src="images/type4.png" alt="클래식"></a></li>
+    </ul>
+    <section id="store"><!--매장안내-->
+        <h2 id="stitle">매장찾기</h2>
+        <div id="st_box">
+            <div id="st_obg"></div><!--검색창 배경 투명도 조절-->
+            <input type="search" id="st_search" placeholder="매장명 또는 주소를 입력해주세요."><button id="st_btn"></button><!--검색창-->
+            <button id="st_detail">상세검색</button>
+        </div>
+    </section><!--매장안내 끝-->
+    <section id="menu">
+        <section id="mtitle">
+            <div id="fork"><img src="images/mtitle1.png" alt="타이틀 포크"></div>
+            <h2>MENU</h2>
+            <div id="knife"><img src="images/mtitle2.png" alt="타이틀 나이프"></div>
+        </section>
+        <ul id="mbtn">
+            <li id="salad"><a href="menu_detail.html"><img src="images/msaladbar.png" alt="saladbarBtn" title="샐러드바버튼"></a></li>
+            <li id="mainmenu"><a href="menu_detail.html"><img src="images/mmainmenu.png" alt="mainmenuBtn" title="메인메뉴버튼"></a></li>
+            <li id="takeout"><a href="menu_detail.html"><img src="images/mtakeout.png" alt="takeoutBtn" title="테이크아웃버튼"></a></li>
+            <li id="drink"><a href="menu_detail.html"><img src="images/mdrink.png" alt="drinkrBtn" title="음료버튼"></a></li>
+        </ul>
+    </section>
+    <section id="notice">
+    	<ul id="nbox">
+        	<li></li>
+        	<li></li>
+        	<li></li>
+        </ul>
+    </section>
+    <section id="blogoImg">
+    	<div id="blogo"></div>
+    </section>
+</section>
+<footer id="info">
+	  <ul id="infomenu"><!--하단메뉴-->
+	    <li><a href="#">개인정보처리방침</a>　|　</li>
+	    <li><a href="#">영상정보처리기기운영·관리방침</a>　|　</li>
+	    <li><a href="#">서비스 이용약관 </a>　|　</li>
+        <li><a href="#">사이트맵 </a></li>
+	  </ul><!--하단메뉴 끝-->
+	  <address>
+      	(주) 이랜드파크 | 서울 강남구 압구정로 152 극동스포츠센터 지하 1층<br>
+        대표이사 : 김현수 | 개인정보보호 책임자 : 김현수 | 대표전화 : 1577-1259<br>
+		COPYRIGHT ⓒ CHOIHEEJOO. ALL RIGHTS RESERVED.
+      </address>
+      <select id="fsite" onChange="if(this.value) window.open(this.value);">
+      	<option>패밀리 사이트 바로가기</option>
+      	<option value="http://www.elandeat.com/brandDetail/RI/">리미니</option>
+      	<option value="http://www.elandeat.com/brandDetail/PM">피자몰</option>
+      	<option value="http://www.thecaffe.co.kr/">더카페</option>
+      	<option value="http://www.elandeat.com/brandDetail/OR">아시아문</option>
+      </select>
+      <ul id="sns">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+</footer>
+</body>
+</html>
+
